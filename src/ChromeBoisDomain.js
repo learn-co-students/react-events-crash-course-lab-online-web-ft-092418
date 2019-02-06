@@ -16,7 +16,7 @@ export default class ChromeBoisDomain extends Component {
   
   handleKeyPress = (event) => {
     let arg 
-    (event.key === "a") ? (arg = '+') : (arg = '-')
+    if (event.key === "a") {arg = '+'} else if (event.key === "s") {arg = '-'}
     resize(arg)
   }
   
